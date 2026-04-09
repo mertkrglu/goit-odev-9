@@ -18,6 +18,12 @@
 
     <load src="./partials/footer.html" />
 
+    <script>
+      if (typeof global === 'undefined') {
+        var global = window;
+      }
+    </script>
+
     <script type="module" src="./js/gallery.js"></script>
   </body>
 </html>
